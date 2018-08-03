@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<title>WebAgency</title>
+	<meta property="og:title" content="WEBAGENCY">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://laurentsa.com/integrez_une_maquette//">
+	<meta property="og:image" content="http://laurentsa.com/integrez_une_maquette/webagency_images/images/logo.png">
+	<meta property="og:description" content="Mon projet d'intégration d'une maquette">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="icon" type="image/png" href="webagency_images/images/fav_icone.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" media="screen and (max-width:1600px) and (min-width:1300px)" href="tablette.css">
+	<link rel="stylesheet" media="screen and (max-width:1300px) and (min-width:1000px)" href="tablette.css">
+	<link rel="stylesheet" media="screen and (max-width:1000px) and (min-width:768px)" href="tablette.css">
+	<link rel="stylesheet" media="screen and (max-width:768px) and (min-width:540px)" href="mobile.css">
+	<link rel="stylesheet" media="screen and (max-width:540px) and (min-width:420px)" href="mobile.css">
+	<link rel="stylesheet" media="screen and (max-width:420px) and (min-width:375px)" href="mobile.css">
+	<link rel="stylesheet" media="screen and (max-width:375px) and (min-width:320px)" href="mobile.css">
+	<!--POLICE VIA GOOGLEFONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<!--ICONE FONTAWESOME-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+	<div id="accueil"></div>
+	<header>
+		<div id="banniere_top">
+			<div id="logo"><img src="webagency_images/images/logo.png" alt="logo agence"></div>
+			<nav>		
+				<ul>
+					<li><a href="#accueil">Accueil</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="banniere">
+			<div id="fleche_gauche"><p class="fleche">&lt;</p></div>
+			<img src="webagency_images/images/slider/bg1.jpg" alt="Image banniere" >
+			<div id="bloc_texte">
+				<p id="slogan"><span class="agence">Webagency</span> : L'agence de tous	vos projets !</p>
+				<p id="presentation">Vous avez un projet web ? La Webagency vous aide à le réaliser !</p>
+				<div>
+					<button>Plus d'infos</button>
+				</div>
+			</div>
+			<div id="fleche_droite"><p class="fleche">></p></div>
+		</div>
+
+		
+	</header>
+
+	<section> <!--SERVICE-->
+
+		<div id="services"></div><!-- Ancres Services -->
+		<h1>Nos Services</h1>
+		<div class="cercle"></div> <!-- décoration de sous-titre -->
+
+		<p class="description_services">Nous sommes spécialisés dans la conception, le développement et la gestion de vos sites web.
+			Nous disposons de solides compétences en design graphique et sommes en mesure de vous proposer une solution adaptée à votre projet
+		tout en tenant compte de son activité et de ses attentes.</p>
+
+		<div id="diff_service">
+			<div id="mac">
+				<img src="webagency_images/images/main-feature.png" alt="Mac">
+			</div>
+			<div id="desing_web"><!--CONTIENT LE BLOC ICONE-->
+
+				<div id="bloc_icone"> <!-- contenant 3 icones-->
+
+					<div class="icone_texte"> <!-- contenant icone + texte -->
+						<div class="icone"> <!-- icone seul -->
+							<i class="fas fa-chart-line fa-3x"></i> <!-- icone chargée via fontawesome -->
+						</div>
+						<div>
+							<h3>UX design</h3>
+							<p>Nous pensons et concevons votre site web de la meilleure manière possible afin de garantir une utilisation optimale.</p>
+						</div>
+					</div>
+
+					<div class="icone_texte"> <!-- contenant icone + texte -->
+						<div class="icone"> <!-- icone seul -->
+							<i class="fas fa-cubes fa-3x"></i> <!-- icone chargée via fontawesome -->
+						</div>
+						<div>
+							<h3>UI design</h3>
+							<p>Nous attachons un soin particulier au design graphique de vos sites web, pour cela nous créons une interface ergonomique pour l'utilisateur.</p>
+						</div>
+					</div>
+
+					<div class="icone_texte"> <!-- contenant icone + texte -->
+						<div id="icone_seo"> <!-- icone seul -->
+							<i class="fas fa-chart-pie fa-3x"></i> <!-- icone chargée via fontawesome -->
+						</div>
+						<div>
+							<h3>SEO</h3>
+							<p>Nous assurons l'optimisation pour les moteurs de recherche afin d'obtenir le meilleur référencement naturel possible.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section> <!--PROJETS-->
+		<div id="portfolio"></div> <!-- Ancres Portfolio -->
+		<h1>nos projets</h1>
+		<div class="cercle"></div> <!-- décoration de sous-titre -->
+		<p>Vous trouverez ci-dessous quelques-unes de nos réalisations</p>
+
+		<div id="bouton_galerie">
+			<ul>
+				<li><button autofocus="">All Works</button></li>
+				<li><button>Créative</button></li>
+				<li><button>Corporate</button></li>
+				<li><button>Portfolio</button></li>
+			</ul>
+		</div>
+		<div id="galerie"> <!-- regroupe toute les images -->
+			<!-- Lunette -->
+			<div>
+
+				<div class="bloc_image">
+					<div class="fond"></div>
+					<div class="oeil"></div>
+					<div class="legende">Magasin de déguisements</div> <!-- apparait en hover -->
+					<a href="webagency_images/images/portfolio/01.jpg" target="_blank">
+						<img src="webagency_images/images/portfolio/01.jpg" alt="Paire de lunette">
+					</a>
+				</div>
+			</div>
+			<!-- Lapin rose Origami -->
+			<div>
+				<div class="bloc_image">
+					<div class="fond"></div>
+					<div class="oeil"></div>
+					<div class="legende">Réaliser des origamis</div> <!-- apparait en hover -->
+					<a href="webagency_images/images/portfolio/02.jpg" target="_blank">
+						<img src="webagency_images/images/portfolio/02.jpg" alt="Lapin rose origami">
+					</a>
+				</div>
+			</div>
+			<!-- Pompadour -->
+			<div>
+				<div class="bloc_image">
+					<div class="fond"></div>
+					<div class="oeil"></div>
+					<div class="legende">Magasin de vêtements en ligne</div> <!-- apparait en hover -->
+					<a href="webagency_images/images/portfolio/03.jpg" target="_blank">
+						<img src="webagency_images/images/portfolio/03.jpg" alt="Pompadour">
+					</a>
+				</div>
+			</div>
+			<!-- item 4 -->
+			<div>
+				<div class="bloc_image">
+					<div class="fond"></div>
+					<div class="oeil"></div>
+					<div class="legende">Dessin industriel</div> <!-- apparait en hover -->
+					<a href="webagency_images/images/portfolio/04.jpg" target="_blank">
+						<img src="webagency_images/images/portfolio/04.jpg" alt="Feuille de papier">
+					</a>
+				</div>
+			</div>
+			<!-- Sac noir/blanc -->
+			<div>
+				<div class="bloc_image">
+					<div class="fond"></div>
+					<div class="oeil"></div>
+					<div class="legende">Magasin de Prêt-à-porter</div> <!-- apparait en hover -->
+					<a href="webagency_images/images/portfolio/05.jpg" target="_blank">
+						<img src="webagency_images/images/portfolio/05.jpg" alt="Sac noir et blanc">
+					</a>
+				</div>
+			</div>
+			<!-- Batiment -->
+			<div>
+				<div class="bloc_image">
+					<div class="fond"></div>
+					<div class="oeil"></div>
+					<div class="legende">Agence de voyage</div> <!-- apparait en hover -->
+					<a href="webagency_images/images/portfolio/06.jpg" target="_blank">
+						<img src="webagency_images/images/portfolio/06.jpg" alt="Batiment">
+					</a>
+				</div>
+			</div>
+			<!-- Avion -->
+			<div>
+				<div class="bloc_image">
+					<div class="fond"></div>
+					<div class="oeil"></div>
+					<div class="legende">Nouvelle technologie</div> <!-- apparait en hover -->
+					<a href="webagency_images/images/portfolio/07.jpg" target="_blank">
+						<img src="webagency_images/images/portfolio/07.jpg" alt="Avion">
+					</a>
+				</div>
+			</div>
+			<!-- divers -->
+			<div>
+				<div class="bloc_image">
+					<div class="fond"></div>
+					<div class="oeil"></div>
+					<div class="legende">Designer graphique</div> <!-- apparait en hover -->
+					<a href="webagency_images/images/portfolio/08.jpg" target="_blank">
+						<img src="webagency_images/images/portfolio/08.jpg" alt="Divers objet">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section> <!--CONTACT-->
+		<div id="contact"></div>
+		<div id="contact_info">
+			<div id="fond_map"></div>
+			<div id="map">
+				<script>
+					function initMap() {
+						var paris = {lat: 48.873060, lng: 2.349908};
+						var map = new google.maps.Map(document.getElementById('map'), {
+							zoom: 17,
+							center: paris
+						});
+						var marker = new google.maps.Marker({
+							position: paris,
+							map: map
+						});
+					}
+				</script>
+				<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUVC7cU0FEyEYesEF-2C6Yemgv-GwUmK8&callback=initMap">
+			</script>
+		</div>
+
+		<div id="formulaire">
+
+			<h2>Contact info</h2>
+			<p>	
+				<strong>WebAgency SAS</strong><br>
+				25 Rue d'Hauteville 75010 Paris<br>
+				<span id="tel">Tel :</span> 01.02.03.04.05
+			</p>
+
+			<form method="post" action="traitement.php">
+				<input type="text" name="name" placeholder="Name" >
+				<input type="text" name="mail" placeholder="Email" >
+				<input type="text" name="subject" placeholder="Subject" >
+				<textarea placeholder="message"></textarea>
+				<div id="bouton_form"><input type="submit" value="Send Message"></div>
+			</form>
+		</div>
+	</div>
+</section>
+
+</body>
+
+</html>
