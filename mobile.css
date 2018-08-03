@@ -1,0 +1,425 @@
+	@media screen and (max-width:768px) and (min-width:540px)
+	{
+		header button
+		{
+			width: 100px;
+			height: 30px;
+			font-size: 12px;
+		}
+		#fleche_droite, #fleche_gauche
+		{
+			display: none;
+		}
+		#slider:hover #im1 ,#slider:hover #im2
+		{
+			animation: none;
+		}
+		.description_services
+		{
+			width: 80%;
+		}
+		#desing_web
+		{
+			margin: auto;
+			padding-top: 20px;
+		}
+		#diff_service
+		{
+			flex-direction: column;
+		}
+		#mac:hover
+		{
+			animation: none;
+		}
+		.icone_texte
+		{
+			margin: auto;
+			flex-direction: column;
+		}
+		.fond, .oeil, .legende
+		{
+			display: none;
+		}
+		#bloc_texte
+		{
+			top: 95px;
+			left: 60px;
+		}
+		#slogan
+		{
+			font-size: 23px;
+			width: 290px;
+		}
+		#presentation
+		{
+			font-size: 12px;
+			width: 225px;
+		}
+		
+	}
+	@media screen and (max-width:540px) and (min-width:320px)
+	{
+		body
+		{
+			overflow-x: hidden;
+		}
+		h1
+		{
+			font-weight: 700;
+			text-transform: uppercase; /* force la mise en MAJ des Titres principaux */
+			font-size: 18px;
+			margin-bottom: 7px;
+			padding-top: 70px;
+		}
+		nav
+		{
+			margin: auto;
+		}
+		section
+		{
+			width: 90%;
+			margin: auto;
+		}
+		header li
+		{
+			margin: 0 0 0 15px;
+			font-family: "Roboto", serif;
+		}
+		header ul
+		{
+			margin: 0 10px 10px 0;
+			padding-left: 0px;
+		}
+		header a:hover
+		{
+			border-top: none; /* Suprime le hover sur le menu */
+		}
+
+		#logo
+		{
+			margin: auto;
+			margin-top: 5px;
+			margin-bottom: -5px;
+			background-size:100%;
+		}
+		#slider:hover #im1 ,#slider:hover #im2
+		{
+			animation: none;
+		}
+
+		
+		#banniere_top /* place la banniere en colonne */
+		{
+			display: flex;
+			flex-direction: column;
+		}
+		#fleche_droite, #fleche_gauche
+		{
+			display: none;
+		}
+		#bloc_texte
+		{
+			top: 95px;
+			left: 20px;
+		}
+		header button
+		{
+			width: 60px;
+			height: 20px;
+			font-size: 8px;
+		}
+		#slogan
+		{
+			font-size: 20px;
+			width: 265px;
+		}
+		#presentation
+		{
+			width: 210px;
+			font-size: 12px;
+			margin-bottom: 5px;
+		}
+		#mac img
+		{
+			width: 250px;
+			height: 150px;
+		}
+		.description_services
+		{
+			width: inherit;
+			text-align: justify;
+		}
+		#diff_service
+		{
+			flex-direction: column;
+		}
+		#desing_web
+		{
+			display: flex;
+			flex-direction: column;
+			margin: 0 0 0 0;
+			width: 100%;
+		}
+		#mac:hover
+		{
+			animation: none;
+		}
+		.icone_texte
+		{
+			flex-direction: column;
+		}
+		.icone_texte p, .icone_texte h3
+		{
+			text-align: left;
+			padding-left: 0;
+		}
+		.icone
+		{
+			margin-top: 20px; 
+		}
+
+		#bouton_galerie ul 
+		{
+			list-style: none;
+			padding: 0 0 0 0;
+		}
+		#bouton_galerie button
+		{
+			width: 80px;
+			height: 30px;
+			font-size: 12px;
+		}
+		#bouton_galerie button:hover::before, #bouton_galerie button:focus::before
+		{
+			margin-top: 23px;
+			margin-left: 13px;
+		}
+		#galerie img
+		{
+			padding-right: 0px;
+			padding-bottom: 10px; /* marge plus petite pour l'affichage mobile */
+		}
+		#formulaire
+		{
+			margin: auto;
+			right: 160px;
+			bottom: 0px;
+			margin-top: 50px;
+			position: inherit; 
+		}
+		#contact_info
+		{
+			margin: auto;
+		}
+
+		.fond, .oeil ,#map ,.legende, #fond_map /*affichage des hover et la map */
+		{
+			display: none;
+		}
+	}
+
+	@media screen and (max-width:420px) and (min-width:375px)
+	{
+		#fleche_droite, #fleche_gauche
+		{
+			display: none;
+		}
+		#bloc_texte
+		{
+			top:90px;
+			left: 23px;
+		}
+		#slogan
+		{
+			font-size: 16px;
+			width: 185px;
+		}
+		#presentation {
+			width: 165px;
+			font-size: 12px;
+			margin-bottom: 0px;
+		}
+
+		#mac img
+		{
+			width: 250px;
+			height: 150px;
+		}
+		.description_services
+		{
+			width: inherit;
+			text-align: justify;
+		}
+		#diff_service
+		{
+			flex-direction: column;
+		}
+		#desing_web
+		{
+			display: flex;
+			flex-direction: column;
+			margin: 0 0 0 0;
+			width: 100%;
+		}
+		#mac:hover
+		{
+			animation: none;
+		}
+		.icone_texte
+		{
+			flex-direction: column;
+		}
+		.icone_texte p, .icone_texte h3
+		{
+			text-align: left;
+			padding-left: 0;
+		}
+		.icone
+		{
+			margin-top: 20px; 
+		}
+
+		#bouton_galerie ul 
+		{
+			list-style: none;
+			padding: 0 0 0 0;
+		}
+		#bouton_galerie button
+		{
+			width: 80px;
+			height: 30px;
+			font-size: 12px;
+		}
+		#bouton_galerie button:hover::before, #bouton_galerie button:focus::before
+		{
+			margin-top: 23px;
+			margin-left: 13px;
+		}
+		#galerie img
+		{
+			padding-right: 0px;
+			padding-bottom: 10px; /* marge plus petite pour l'affichage mobile */
+		}
+		#formulaire
+		{
+			margin: auto;
+			right: 160px;
+			bottom: 0px;
+			margin-top: 50px;
+			position: inherit; 
+		}
+		#contact_info
+		{
+			margin: auto;
+		}
+		.fond, .oeil, #map ,.legende /* Supprime l'affichage des hover et la map */
+		{
+			display: none;
+		}
+	}
+
+	@media screen and (max-width:375px) and (min-width:320px)
+	{
+		#fleche_droite, #fleche_gauche
+		{
+			display: none;
+		}
+		#bloc_texte {
+			top: 91px;
+			left: 6px;
+		}
+		#slogan
+		{
+			font-size: 16px;
+			width: 185px;
+			margin-bottom: -7px;
+		}
+		#presentation {
+			width: 165px;
+			font-size: 12px;
+			margin-bottom: 5px;
+		}
+		#banniere img
+		{
+			width: 100vw;
+			height: 150px;
+		}
+
+		#mac img
+		{
+			width: 250px;
+			height: 150px;
+		}
+		.description_services
+		{
+			width: inherit;
+			text-align: justify;
+		}
+		#diff_service
+		{
+			flex-direction: column;
+		}
+		#desing_web
+		{
+			display: flex;
+			flex-direction: column;
+			margin: 0 0 0 0;
+			width: 100%;
+		}
+		#mac:hover
+		{
+			animation: none;
+		}
+		.icone_texte
+		{
+			flex-direction: column;
+		}
+		.icone_texte p, .icone_texte h3
+		{
+			text-align: left;
+			padding-left: 0;
+		}
+		.icone
+		{
+			margin-top: 20px; 
+		}
+
+		#bouton_galerie ul 
+		{
+			list-style: none;
+			padding: 0 0 0 0;
+		}
+		#bouton_galerie button
+		{
+			width: 80px;
+			height: 30px;
+			font-size: 12px;
+		}
+		#bouton_galerie button:hover::before, #bouton_galerie button:focus::before
+		{
+			margin-top: 23px;
+			margin-left: 13px;
+		}
+		#galerie img
+		{
+			padding-right: 0px;
+			padding-bottom: 10px; /* marge plus petite pour l'affichage mobile */
+		}
+		#formulaire
+		{
+			margin: auto;
+			right: 160px;
+			bottom: 0px;
+			margin-top: 50px;
+			position: inherit; 
+		}
+		#contact_info
+		{
+			margin: auto;
+		}
+		.fond, .oeil, #map, .legende /* Supprime l'affichage des hover et la map */
+		{
+			display: none;
+		}
+	}
+

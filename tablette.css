@@ -1,0 +1,135 @@
+@media screen and (max-width:1600px) and (min-width:1300px)
+{
+
+	#bloc_texte 
+	{
+		color: white;
+		position: absolute;
+		font-weight: bold;
+		top: 230px;
+		left: 159px;
+	}
+	#slogan {
+		text-transform: uppercase;
+		font-size: 30px;
+		width: 600px;
+		margin-bottom: 0px;
+	}
+
+
+	#desing_web
+	{
+		margin: auto;
+		padding-top: 20px;
+	}
+	#diff_service
+	{
+		margin-top: 25px;
+	}
+	.icone_texte
+	{
+		margin: auto;
+		flex-direction: column;
+	}
+	
+
+}
+@media screen and (max-width:1300px) and (min-width:1000px)
+{
+	#fleche_droite, #fleche_gauche
+	{
+		display: none;
+	}
+	#slider:hover #im1 ,#slider:hover #im2
+	{
+		animation: none;
+	}
+	#bloc_texte
+	{
+		top: 180px;
+		left : 30px;
+	}
+	#slogan {
+		text-transform: uppercase;
+		font-size: 30px;
+		width: 600px;
+		margin-bottom: 0px;
+	}
+	#desing_web
+	{
+		margin: auto;
+		padding-top: 20px;
+	}
+	#diff_service
+	{
+		flex-direction: column;
+	}
+	#mac:hover
+	{
+		animation: none;
+	}
+	.icone_texte
+	{
+		margin: auto;
+		flex-direction: column;
+	}
+	.fond, .oeil, .legende
+	{
+		display: none;
+	}
+}
+@media screen and (max-width:1000px) and (min-width:768px)
+{
+	#fleche_droite, #fleche_gauche
+	{
+		display: none;
+	}
+	#bloc_texte
+	{
+		top: 145px;
+		left: 30px;
+	}
+	#presentation
+	{
+		width: 285px;
+		font-size: 12px;
+	}
+	#slogan {
+		text-transform: uppercase;
+		font-size: 25px;
+		width: 425px;
+		margin-bottom: 0px;
+	}
+	header button
+	{
+		width: 100px;
+		height: 30px;
+		font-size: 12px;
+	}
+	.description_services
+	{
+		width: 80%;
+	}
+	#desing_web
+	{
+		margin: auto;
+		padding-top: 20px;
+	}
+	#diff_service
+	{
+		flex-direction: column;
+	}
+	#mac:hover
+	{
+		animation: none;
+	}
+	.icone_texte
+	{
+		margin: auto;
+		flex-direction: column;
+	}
+	.fond, .oeil, .legende
+	{
+		display: none;
+	}
+}

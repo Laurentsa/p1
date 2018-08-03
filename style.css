@@ -1,0 +1,496 @@
+body
+{
+	overflow-x: hidden;
+	width: 100vw;
+	margin: auto;  /*Centre le corp de page*/ 
+	font-family: "Roboto",serif;
+	font-size: 16px;
+}
+h1
+{
+	font-weight: 700;
+	text-transform: uppercase; /* force la mise en MAJ des titres principaux */
+	font-size: 25px;
+	margin-bottom: 7px;
+	padding-top: 75px;
+}
+h3
+{
+	margin-bottom: -10px; 
+}
+i
+{
+	color: #5cadd3; /* Couleur des 3 icones */
+}
+/* Animation du Mac section services*/
+@keyframes animac 
+{
+	0%{
+		transform: translate(0);
+	}
+	50%{
+		transform: translate(100px, 100px);
+	}
+	100%{
+		transform: translate(100px, 100px) scale(1.5);
+	}
+}
+@keyframes animhover
+{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 0.4;
+	}
+}
+
+@keyframes animopacity
+{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+.cercle {
+	width: 12px;
+	height: 12px;
+	background: #5cadd3;
+	border-radius: 50px;
+	margin : auto;
+	margin-bottom: 10px;
+}
+section
+{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+/* -------------------BANNIERE TOP-----------------*/ 
+/*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+nav a
+{
+	text-decoration: none; /* retire le style de base des liens */
+	color: black;
+}
+header ul
+{
+	display: flex;
+	list-style: none; /* retire les puces des listes à puces dans le header */
+}
+header li
+{
+	margin: 30px 25px 0 0;
+}
+header a:hover
+{
+	border-top: 2px solid #5cadd3;
+	padding-top: 30px;
+}
+header 
+{
+	margin-top: 95px;
+}
+header button
+{
+	color: white;
+	width: 140px;
+	height: 40px;
+	background-color: #5cadd3;
+	font-family: "Roboto",serif;
+	font-size: 18px;
+	border: none;
+	font-weight: bold;
+	border-radius: 2px;
+	border-bottom: 3px solid #468cad; 
+}
+#banniere img
+{
+	width: 100%;
+}
+#fleche_gauche
+{
+	position: absolute;
+	top: 20vw;
+	border: 1px solid black;
+	border-radius: 0 50px 50px 0;
+	padding: 7px 8px 7px 4px;
+	background-color: black;
+	opacity: 0.4;
+}
+#fleche_droite
+{
+	position: absolute;
+	top: 20vw;
+	right: 0px;
+	border: 1px solid black;
+	border-radius: 50px 0 0px 50px;
+	padding: 7px 4px 7px 8px;
+	background-color: black;
+	opacity: 0.4;
+}
+.fleche /* Design de la flèche + demi-cercle */
+{
+	font-weight: lighter;
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+	margin: 0 0 0 0;
+	cursor: default;
+}
+
+#slogan
+{
+	text-transform: uppercase;
+	font-size: 35px;
+	width: 700px;
+	margin-bottom: 0px;
+}
+
+#bloc_texte
+{
+	color: white;
+	position: absolute;
+	font-weight: bold;
+	top: 270px;
+	left: 320px;
+}
+#banniere_top 
+{
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+	position: fixed;
+	z-index: 1; /* place le menu en priorité sur la banniere */
+	top: 0px;   /* positionne le menu tout en haut de l'écran */
+	width: 100%;
+}
+#logo
+{
+	width: 250px;
+	height: 75px;
+	margin: 20px 0 0 0;
+}
+.agence
+{
+	color: #5cadd3;
+}
+
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*-------------------SECTION SERVICE----------------------*/
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+
+.description_services
+{
+	margin: auto;
+	width: 800px; /* Limite la taille du texte */
+}
+#mac
+{
+	padding-top: 15px;
+}
+#mac:hover /* animation en hover sur le Mac */
+{
+	animation: animac 2s forwards 250ms;
+}
+#diff_service 
+{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around; /* Espace l'image du Mac avec le bloc d'icone/texte */
+}
+
+#desing_web 
+{
+	width: 500px;
+	margin-top: 80px;
+	margin-left: 100px;
+	text-align: justify;
+	font-size: 16px;
+}
+#bloc_icone
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.icone_texte /* Place l'icone et le texte sur la même ligne */
+{
+	display: flex;
+}
+.icone
+{
+	margin: auto;
+	border: 1px solid #DBDAD9;
+	border-radius: 50px;
+	padding: 15px;
+}
+#icone_seo /*------REGLAGE INDEPENDENT DE L ICONE "SEO" CAUSE : TAILLE DIFFERENTE-----*/
+{
+	margin: auto;
+	border: 1px solid #DBDAD9;
+	border-radius: 50px;
+	padding: 15px;	
+}
+.icone_texte p, .icone_texte h3
+{
+	padding-left: 35px;
+}
+/*-------------------DECO ICONE------------------*/
+.icone::before
+{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	margin: 15px 0 0 55px;	
+	background: #5cadd3;
+	border-radius: 50px;
+}
+#icone_seo::before /*----------Décalage du rond déco sur la droite--------*/
+{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	margin: 15px 0 0 60px;	
+	background: #5cadd3;
+	border-radius: 50px;
+}
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*-------------------SECTION SPROJETS---------------------*/
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+
+/*-------------MISE EN PLACE 4 BOUTON---------------*/
+#bouton_galerie
+{
+	margin-top: 15px;
+	padding-bottom: 50px;
+}
+#bouton_galerie ul
+{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: auto;
+	padding-left: 0px;
+}
+/*-----------------------------------------------------*/
+/*--------------MISE EN FORME 4 BOUTONS----------------*/
+#bouton_galerie button
+{
+	color: black;
+	font-size: 16px;
+	width: 100px;
+	height: 40px;
+	margin-top: 20px;
+	font-family: "Roboto",serif;
+	border: none;
+	border-radius: 4px 4px 4px 4px;
+	background-color: #e5e5e5;
+}
+#allworks:autofocus
+{
+
+}
+
+/*----------APPARANCE BOUTON HOVER + FOCUS-------------*/
+#bouton_galerie button:hover ,#bouton_galerie button:focus
+{
+	background-color: #5cadd3;
+	color: white;
+	border: none;
+	border-bottom: 3px solid #468cad;
+}
+/*------APPARANCE BOUTON HOVER + FOCUS + FLECHE---------*/
+#bouton_galerie button:hover::before, #bouton_galerie button:focus::before
+{
+	content: "";
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid;
+	margin-top: 32px;
+	margin-left: 25px;
+	color:#5cadd3;
+}
+/*------------------------------------------------------*/
+/*--------------PLACEMENT ET TAILLE IMAGES--------------*/
+#galerie
+{
+	display: flex;
+	flex-wrap: wrap; /* retour a la ligne des image à la réduction de fenêtre */
+	justify-content: space-around;
+	justify-content: center;
+	width: 80%;	/* Limite la taille de la galerie a 80% */
+	margin: auto; /* Centre la galerie */
+}
+/* Taille d'image plus petite avec ajout de marge */
+#galerie img
+{
+	width: 300px; 
+	height: 200px;
+	padding-right: 35px;
+	padding-bottom: 35px;	
+}
+.fond /* Fond decoratif au pieds des images */
+{
+	position: absolute;
+	width: 300px;
+	height: 75px;
+	margin-top: 125px;
+	background: black;
+	opacity: 0;
+}
+.bloc_image:hover .fond
+{
+	opacity: 0.4;
+	animation: animhover 1s forwards;
+
+}
+.oeil /* Réglage du petit oeil sur les images */
+{
+	width: 40px;
+	height: 40px;
+	margin: 105px 0 0 240px;
+	position: absolute;
+	border: 2px solid white;
+	border-radius: 50px;
+	/* IMAGE DE L'OEIL QUI NE PEUT PAS ETRE RENDU AVEC LA POLICE FONTAWESOME*/
+	background: #5cadd3 url("webagency_images/images/oeil.png") no-repeat center;
+	opacity: 0; 
+}
+.bloc_image:hover .oeil
+{
+	animation: animopacity 1s forwards;
+	opacity: 1;
+}
+.legende /* légende invisible sur les images */
+{
+	opacity: 0; 
+	color: white;
+	font-weight: bold;
+	padding-top: 150px;
+	padding-left: 40px;
+	position: absolute;
+	cursor: default;
+}
+.legende:hover 
+{
+	animation: animopacity 1s forwards ;
+
+}
+.bloc_image:hover .legende /* légende visible lors du hover */
+{
+	opacity: 1;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*----------------------CONTACT-------------------------*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+/*----------------BLOC MAP + FORMULAIRE-----------------*/
+#contact_info 
+{
+	width: 100%;
+	display: flex; /* pour superposer le formulaire sur la map */
+	margin: auto;
+}
+#map 
+{
+	height: 600px;
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 75px;
+	opacity: 0.9;
+}
+#formulaire
+{
+	height: 500px;
+	width: 300px;
+	border: 1px solid #d8d8d8;
+	margin-top: 150px;
+	right: 50px;
+	position: absolute;
+	text-align: justify;
+	background-color: #F7F7F7;
+	opacity: 0.94;
+	font-size: 14px;
+}
+#tel
+{
+	border-bottom: 1px dotted black;
+}
+
+#formulaire h2, #formulaire p, form
+{
+	margin-left: 20px; 
+}
+#formulaire h2
+{
+	margin-bottom: 0px;
+}
+
+#formulaire form
+{
+	width: 260px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#formulaire input, #formulaire textarea
+{
+	margin-bottom: 15px;
+	border: 1px solid #d8d8d8;
+	border-radius: 2px;
+	padding: 5px 5px 5px 5px;
+	font-family: "Roboto",serif;
+	font-size: 12px;
+	background-color: white;
+	color: grey;
+}
+#formulaire textarea
+{
+	height: 160px;
+}
+#bouton_form input
+{
+	font-family: "Roboto", serif;
+	font-weight: bold;
+	width: 110px;
+	height: 30px;
+	background-color: #5cadd3;
+	color: white;
+	border: none; /* supression des bordures générales */
+	border-bottom: 3px solid #468cad; /* création de la nouvelle bordure decorative */
+}
+/*------------------------------------------------------------*/
+#fond_map
+{
+	position: absolute;
+	margin-top: 100px;
+
+	height: 600px;
+	width: 100%;
+	background-color: blue;
+}
+
+
+
